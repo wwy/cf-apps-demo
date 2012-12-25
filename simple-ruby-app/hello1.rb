@@ -1,4 +1,4 @@
 loop { 
 	puts 'Hello 1'
-	sleep 111
+	sleep 10
 }
