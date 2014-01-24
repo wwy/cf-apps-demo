@@ -3,7 +3,8 @@
     cd cf-apps-demo/
 
     cd simple-go-app/
-    gcf push my-go-demo -b https://github.com/michaljemala/cloudfoundry-buildpack-go.git -i 2 -m 128M
+    appname="my-go-demo" # change to your own name
+    gcf push ${appname} -b https://github.com/michaljemala/cloudfoundry-buildpack-go.git -i 2 -m 128M
     
-    curl http://my-cf-domain.com
+    curl ${appname}.cfapps.io
 
