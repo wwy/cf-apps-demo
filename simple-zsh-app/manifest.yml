@@ -1,9 +1,0 @@
---- 
-applications: 
-- name: z2
-  framework: standalone
-  runtime: ruby18
-  memory: 64M
-  instances: 1
-  url: z2.${target-base}
-  path: .

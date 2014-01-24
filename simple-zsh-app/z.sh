@@ -5,7 +5,6 @@ autoload -U tcp_proxy
 function html {
 	cat <<-E
 		$VCAP_APPLICATION
-		`cat $HOME/tmp/random.txt`
 	E
 }
 

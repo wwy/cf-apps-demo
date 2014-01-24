@@ -1,9 +1,9 @@
---- 
-applications: 
+---
+applications:
 - name: r2
   framework: standalone
   runtime: ruby18
   memory: 64M
   instances: 1
-  url: 
+  url: none
   path: .
