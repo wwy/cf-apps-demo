@@ -5,6 +5,6 @@
     cd go-app/
     appname="my-go-demo" # change to your own name
 
-    gcf push ${appname} -b https://github.com/michaljemala/cloudfoundry-buildpack-go.git -i 2 -m 128M
+    gcf push ${appname} -i 2 -m 128M -b https://github.com/michaljemala/cloudfoundry-buildpack-go.git
     curl ${appname}.cfapps.io
 
