@@ -18,7 +18,9 @@ func main() {
 
 func hello(w http.ResponseWriter, r *http.Request) {
 	defer r.Body.Close()
-	str := "hello world!"
-	fmt.Fprintf(w, "%s\n", str)
+	env := os.Environ()
+	for _, v := range env {
+		fmt.Fprintf(w, "%s\n", v)
+	}
 	log.Println(r.RemoteAddr, r.Header)
 }
