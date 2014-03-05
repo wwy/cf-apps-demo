@@ -10,7 +10,7 @@ import (
 func main() {
 	http.HandleFunc("/", hello)
 	log.Println("listening...")
-	err := http.ListenAndServe(":"+os.Getenv("VCAP_APP_PORT"), nil)
+	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 	if err != nil {
 		panic(err)
 	}
